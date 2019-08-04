@@ -1,0 +1,117 @@
+INSERT INTO `periodicals`.`user_role` (`id`,`role`) VALUES (1,'User');
+INSERT INTO `periodicals`.`user_role` (`id`,`role`) VALUES (2,'Admin');
+
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (2,'MegaAdmin','321Ivan');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'Ivan@Ivan','1van1');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'KaTe','ghyt43');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'Vova','super1Vovan');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'MaR','qwerty123');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (2,'mikroAdmin','q_we&rTy123');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'Garry','Porter');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'VikTor','Dertgf345');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'Ivan321','qwerty123');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'Walker','gtrf45');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user1','1user1');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user2','2user2');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user3','3user3');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user4','4user4');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user5','5user5');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user6','6user6');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user7','7user7');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user8','8user8');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user9','9user9');
+INSERT INTO `periodicals`.`user` (`user_role`,`login`,`password`) VALUES (1,'user10','10user10');
+
+INSERT INTO `periodicals`.`subscription_period` (`name`,`amount_of_months`,`rate`) VALUES ('One_month',1,1.0);
+INSERT INTO `periodicals`.`subscription_period` (`name`,`amount_of_months`,`rate`) VALUES ('Three_months',3,0.9);
+INSERT INTO `periodicals`.`subscription_period` (`name`,`amount_of_months`,`rate`) VALUES ('Six_months',6,0.8);
+INSERT INTO `periodicals`.`subscription_period` (`name`,`amount_of_months`,`rate`) VALUES ('Year',12,0.7);
+
+
+INSERT INTO `periodicals`.`periodical_type` (`id`,`type`) VALUES (1,'Magazine');
+INSERT INTO `periodicals`.`periodical_type` (`id`,`type`) VALUES (2,'Almanac');
+INSERT INTO `periodicals`.`periodical_type` (`id`,`type`) VALUES (3,'Newspaper');
+INSERT INTO `periodicals`.`periodical_type` (`id`,`type`) VALUES (4,'Annual');
+INSERT INTO `periodicals`.`periodical_type` (`id`,`type`) VALUES (5,'Comix');
+
+
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`) VALUES ('Epam ITMagazine',1,42.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('The IT society',1,30.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('PC Magazine',1,63.3);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('IT News',3,35.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('Canadian Global Almanac',2,200.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('The New York Times Almanac',2,150.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('The GPS almanac',2,100.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('The Sun',3,40.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('DC',5,50.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('The Simpsons book',4,90.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('The Simpsons',5,15.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('National geographic',1,92.0);
+INSERT INTO `periodicals`.`periodical` (`title`,`periodical_type`,`price`)  VALUES ('Marvel',5,70.0);
+
+
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (1,2,'2019-06-04 22:00:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (2,1,'2019-06-24 21:00:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (3,3,'2019-06-04 12:00:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (4,11,'2019-06-14 22:05:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (1,8,'2019-06-22 07:05:30');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (6,5,'2019-06-11 20:15:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (7,7,'2019-06-12 22:05:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (2,4,'2019-06-14 11:25:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (8,10,'2019-06-24 14:05:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (6,6,'2019-07-14 22:05:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (1,9,'2019-07-04 22:00:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (2,1,'2019-07-24 21:00:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (3,3,'2019-07-04 12:00:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (4,2,'2019-07-14 22:05:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (1,1,'2019-07-22 07:05:30');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (6,5,'2019-07-11 20:15:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (7,7,'2019-07-12 22:05:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (2,4,'2019-07-14 11:25:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (8,3,'2019-07-24 14:05:00');
+INSERT INTO `periodicals`.`order` (`user_id`,`periodical_id`,`date`) VALUES (6,1,'2019-07-14 22:05:00');
+
+
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-04 22:00:00',213);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-24 21:05:08',153);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-14 20:15:00',113);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-02 11:00:00',523);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-04 22:00:00',253);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-04 21:20:00',313);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-14 22:40:00',513);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-04 22:50:00',113);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-06-24 12:00:00',152);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-22 20:00:00',243);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-04 22:00:00',213);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-24 21:05:08',153);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-14 20:15:00',113);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-02 11:00:00',523);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-04 22:00:00',253);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-04 21:20:00',313);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-14 22:40:00',513);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-04 22:50:00',113);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-24 12:00:00',152);
+INSERT INTO `periodicals`.`payment` (`date`,`amount`) VALUES ('2019-07-22 20:00:00',243);
+
+
+
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (1,2,1,'2019-06-04 23:20:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (2,1,2,'2019-06-25 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (3,3,3,'2019-06-14 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (4,1,4,'2019-06-02 12:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (5,2,5,'2019-06-04 23:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (6,3,6,'2019-06-04 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (7,2,7,'2019-06-14 23:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (8,3,8,'2019-06-04 23:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (9,4,9,'2019-06-14 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (10,2,10,'2019-07-24 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (11,2,11,'2019-07-04 23:20:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (12,2,12,'2019-07-25 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (13,1,13,'2019-07-14 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (14,2,14,'2019-07-02 12:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (15,3,15,'2019-07-04 23:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (16,1,16,'2019-07-04 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (17,1,17,'2019-07-14 23:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (18,2,18,'2019-07-04 23:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (19,2,19,'2019-07-14 22:00:00');
+INSERT INTO `periodicals`.`subscription` (`order_id`,`subscription_period`,`payment_id`,`expiration_date`) VALUES (20,1,20,'2019-07-24 22:00:00');
